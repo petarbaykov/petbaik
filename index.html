@@ -36,7 +36,7 @@
           </div>
       </nav>
 
-        <div class="header-container relative headerZindex header" >
+        <div class="header-container relative headerZindex header" id="home-header">
             <span class="date">18 юли, 2017</span>
             <h1>Не пропускай предстоящото събитие</h1>
             <div class="count-down">
@@ -101,23 +101,41 @@
       <section class="padding80 subCol">
         <div class="container">
           <aside class="leftaside">
-            <ul>
-              <li class="color-green"><a href="#">Начало</a></li>
-              <li class="color-orange"><a href="#">За нас</a></li>
-              <li class="color-red"><a href="#">Контакти</a></li>
+            <ul id="left-nav">
+              <li class="color-green"><span onclick="scrollToSection(this)" id="speakers">ГОВОРИТЕЛИ</span></li>
+              <li class="color-orange"><span onclick="scrollToSection(this)" id="schedule">ПРОГРАМА</span></li>
+              <li class="color-red"><span onclick="scrollToSection(this)">ЗА КОНЕФЕРЕНЦИЯТА</span></li>
               <li class="color-gray"><a href="#">Вход</a></li>
             </ul>
           </aside>
           <div class="content-container">
-              <div class="speakers padding40">
+              <div class="speakers padding40" >
                   <h1>Говорители</h1>
                   <div class="speker-box ">
                         <div class="speaker-image" id="speaker-1">
 
                         </div>
-                        <div class="speaker-name">Иван Василев</div>
-                        <div class="speaker-job">C# developer</div>
-                        <div class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo laborum.</div>
+                        <div class="translate">
+                          <div class="speaker-name">Иван Василев</div>
+                          <div class="speaker-job">C# developer</div>
+                          <div class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo laborum.</div>
+                        </div>
+                        <div class="speaker-social">
+                            <span class="fa fa-facebook"></span>
+                              <span class="fa fa-twitter"></span>
+                                <span class="fa fa-linkedin"></span>
+                                  <span class="fa fa-instagram"></span>
+                        </div>
+                  </div>
+                  <div class="speker-box ">
+                        <div class="speaker-image" id="speaker-1">
+
+                        </div>
+                        <div class="translate">
+                          <div class="speaker-name">Петър Петров</div>
+                          <div class="speaker-job">Node.js expert</div>
+                          <div class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo laborum.</div>
+                        </div>
                         <div class="speaker-social">
                             <span class="fa fa-facebook"></span>
                               <span class="fa fa-twitter"></span>
@@ -157,6 +175,9 @@
               <div class="facebook-counter social-box"><span class="fa fa-facebook"></span></div>
               <div class="twitter-counter social-box"><span class="fa fa-twitter"></span></div>
               <div class="rss-counter social-box"><span class="fa fa-rss"></span></div>
+            </div>
+            <div class="latest-post">
+              <h2>Последно от блога</h2>
             </div>
           </aside>
         </div>
